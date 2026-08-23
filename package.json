@@ -1,0 +1,48 @@
+{
+  "name": "llm-chat-vault",
+  "version": "1.0.0",
+  "description": "Local SQLite-backed vault, archive manager, and search engine for ChatGPT, Claude, and LLM conversation exports with full branch and analytics support.",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "python -m server.app 8000",
+    "import": "python -m server.importer",
+    "test": "python -m unittest discover tests",
+    "electron": "electron .",
+    "pack": "electron-builder --dir --win"
+  },
+  "build": {
+    "appId": "com.antigravity.llmchatvault",
+    "productName": "LLM Chat Vault",
+    "icon": "assets/icon.png",
+    "asar": false,
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "dir",
+      "icon": "assets/icon.ico"
+    },
+    "files": [
+      "**/*",
+      "!dist/*",
+      "!tests/*",
+      "!**/*.pyc",
+      "!__pycache__/*",
+      "!*.md"
+    ]
+  },
+  "keywords": [
+    "chatgpt",
+    "claude",
+    "export-viewer",
+    "sqlite",
+    "fts5",
+    "electron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.4.6",
+    "electron-builder": "^24.13.3"
+  }
+}

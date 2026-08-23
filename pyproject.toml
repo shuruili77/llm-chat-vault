@@ -1,0 +1,13 @@
+[project]
+name = "llm-chat-vault"
+version = "1.0.0"
+description = "Local SQLite-backed vault, archive manager, and search engine for ChatGPT, Claude, and LLM conversation exports."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material[imaging]>=9.4.0",
+]

@@ -1,0 +1,59 @@
+# Databases & SQLite Storage (Strict privacy protection)
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.db.bak
+conversations.db*
+
+# User Data & Attachments
+attachments/
+*/attachments/
+chat_attachments/
+conversations.json
+chat_history.json
+shared_conversations.json
+*.zip
+*.tar
+*.gz
+
+# Logs & Runtime Output
+*.log
+server.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python & Testing
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Node & Build Artifacts
+node_modules/
+dist/
+build/
+.cache
+site/
+
+# Environment & Secrets
+.env
+.env.*
+*.local
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
